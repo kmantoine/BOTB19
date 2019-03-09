@@ -26,5 +26,9 @@ public class StartingFiveNewUser {
         newUserDeck.ADDtoMainDeck();
         //Select 5 random cards to start a new user with
         newUserDeck.randomizeNewUserDeck();
+        
+        //To test our ranking method
+        Ratings rating = new Ratings();
+        System.out.println(rating.calculateRating());
     }   
 }
