@@ -29,7 +29,6 @@ public class Beacon {
         // distance of its center from 
         // given point 
         if (Math.pow(x-centerX, 2) + Math.pow(y - centerY, 2) <= Math.pow(radius, 2)){ 
-            System.out.print("Inside"); 
             notifyUser();
             stillInsideRadius = true;
             return true;

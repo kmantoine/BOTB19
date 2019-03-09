@@ -32,11 +32,6 @@ public class PlayerCard {
         deck=newDeck;
     }
     
-    public static PlayerCard createPlayer(String name, String team, int number, String position, int rating, int year, boolean active, String classs){
-        PlayerCard newPlayer = new PlayerCard(name, team, number, position, rating, year, active, classs);
-        return newPlayer;
-    }
-    
     //Setters
     public void setName (String newName){
         name=newName;
@@ -75,11 +70,6 @@ public class PlayerCard {
     public String getCurrentPlayer(){
         return active;
     }
-    
-    private void validateName(String name) throws FormatException {
-    // Do validation here to ensure we have a legit phone number.
-    // Throw an exception if its invalid.
-  }
     
     //For outputing string used to test what cards a player gets. For Testing purposes
     @Override
