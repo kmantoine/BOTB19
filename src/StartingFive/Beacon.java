@@ -30,7 +30,6 @@ public class Beacon {
         // given point 
         if (Math.pow(x-centerX, 2) + Math.pow(y - centerY, 2) <= Math.pow(radius, 2)){ 
             notifyUser();
-            stillInsideRadius = true;
             return true;
         }
         return false;
